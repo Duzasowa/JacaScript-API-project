@@ -26,6 +26,7 @@ const App = () => {
     fetchPlanets();
   }, []);
 
+  console.log("data", people)
 
   return (
     <BrowserRouter>
