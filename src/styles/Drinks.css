@@ -1,0 +1,52 @@
+
+
+.page_container{
+  background-image: url(../images/ty.jpg); 
+  text-align: center;
+}
+
+.page_container1{
+  background-image: url(../images/wood1.jpg) ; 
+  text-align: center;
+}
+
+.into_text_container{
+  margin-left: 30%;
+  height: 100px;
+  margin-right: 30%;
+  background-color: white;
+   
+}
+
+.main_container{
+  background-image: url(../images/ty.jpg)  no-repeat;
+}
+
+.main_container1{
+  background-image: url(../images/wood1.jpg) no-repeat;
+}
+
+
+.drinks_container{
+  margin-left: 30%;
+  margin-right: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+}
+
+.name_drink{
+  height: 50px;
+}
+
+.name_container{
+  margin-top: 50px;
+}
+
+.image_drink{
+  border-style: solid;
+  margin-bottom: 50px;
+}

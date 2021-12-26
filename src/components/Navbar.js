@@ -3,7 +3,7 @@ import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {NavLink} from "react-router-dom";
-import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE} from "../utils/consts";
+import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE, PLANETS_ROUTE} from "../utils/consts";
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
@@ -17,6 +17,11 @@ const NavBar = observer(() => {
     <Navbar bg="dark" variant="dark">
       <Container>
         <NavLink style={{color:'white'}} to={MAIN_ROUTE}>STARWARS</NavLink>
+        <Nav.Link style={{color: 'white'}} href='alcoholic'>ALCOHOLIC COCKTAILS</Nav.Link>
+        <Nav.Link style={{color: 'white'}} href='cocktails'>COCKTAILS</Nav.Link>
+        <Nav.Link style={{color: 'white'}} href='planets'>PLANETS</Nav.Link>
+        
+
         {user.isAuth ?
           <Nav className="ml-auto" style={{color: 'white'}}>
             <Nav.Link href="//////">SUBSCRIBE!</Nav.Link>
