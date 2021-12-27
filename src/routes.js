@@ -1,6 +1,6 @@
 import Admin from "./pages/Admin";
-import {ADMIN_ROUTE, BASKET_ROUTE, DEVICE_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, MAIN_ROUTE, ALCOHOLIC_ROUTE, COCKTAILS_ROUTE} from "./utils/consts";
-import Basket from "./pages/Basket";
+import {ADMIN_ROUTE, ABOUT_ROUTE, DEVICE_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, MAIN_ROUTE, ALCOHOLIC_ROUTE, COCKTAILS_ROUTE} from "./utils/consts";
+import About from "./pages/About";
 import Auth from "./pages/Auth";
 import Alcoholic from "./pages/Alcoholic";
 import Cocktails from "./pages/Cocktails";
@@ -10,10 +10,6 @@ export const authRoutes = [
     {
         path: ADMIN_ROUTE,
         Component: Admin
-    },
-    {
-        path: BASKET_ROUTE,
-        Component: Basket
     },
 ]
 
@@ -37,5 +33,9 @@ export const publicRoutes = [
     {
         path: COCKTAILS_ROUTE,
         Component: Cocktails
+    },
+    {
+        path: ABOUT_ROUTE,
+        Component: About
     },
 ]

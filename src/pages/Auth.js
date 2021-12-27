@@ -68,7 +68,7 @@ const Auth = observer(() => {
             }
             <Button
               variant={"outline-success"}
-              
+              style={{color: 'grey', borderColor: 'grey'}}
               onClick={() => {
                 user.setIsAuth(true); 
                 history.push(MAIN_ROUTE);

@@ -3,7 +3,7 @@ import {Context} from "../index";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {NavLink} from "react-router-dom";
-import {ADMIN_ROUTE, LOGIN_ROUTE, MAIN_ROUTE, PLANETS_ROUTE} from "../utils/consts";
+import {LOGIN_ROUTE, MAIN_ROUTE, ADMIN_ROUTE} from "../utils/consts";
 import {Button} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
@@ -16,15 +16,15 @@ const NavBar = observer(() => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <NavLink style={{color:'white'}} to={MAIN_ROUTE}>STARWARS</NavLink>
+        <NavLink style={{color:'white', fontSize: 25}} to={MAIN_ROUTE}>ARIZONA</NavLink>
         <Nav.Link style={{color: 'white'}} href='alcoholic'>ALCOHOLIC COCKTAILS</Nav.Link>
         <Nav.Link style={{color: 'white'}} href='cocktails'>COCKTAILS</Nav.Link>
-        <Nav.Link style={{color: 'white'}} href='planets'>PLANETS</Nav.Link>
+        <Nav.Link style={{color: 'white'}} href='about'>ABOUT US</Nav.Link>
         
 
         {user.isAuth ?
           <Nav className="ml-auto" style={{color: 'white'}}>
-            <Nav.Link href="//////">SUBSCRIBE!</Nav.Link>
+            <NavLink style={{color:'white', marginTop: 9, marginRight: 5}} to={ADMIN_ROUTE}>SUBSCRIBE!</NavLink>
             <Button variant={"outline-light"} className="ml-2">SIGN OUT</Button>
           </Nav>
           :
