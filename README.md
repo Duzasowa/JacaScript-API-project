@@ -1,7 +1,3 @@
-# React API project
-
-This project was [launched at...](https://github.com/facebook/create-react-app).
-
 ### API used
 See [ThecocktailDB](https://www.thecocktaildb.com/).
 
