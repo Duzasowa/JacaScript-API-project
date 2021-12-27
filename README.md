@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# React API project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was [launched at...](https://github.com/facebook/create-react-app).
+
+### API used
+See [ThecocktailDB](https://www.thecocktaildb.com/).
 
 ## Available Scripts
 
